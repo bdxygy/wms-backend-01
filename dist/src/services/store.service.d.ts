@@ -1,0 +1,103 @@
+import type { CreateStoreRequest, UpdateStoreRequest, ListStoresQuery } from "../schemas/store.schemas";
+import type { User } from "../models/users";
+export declare class StoreService {
+    static createStore(data: CreateStoreRequest, createdBy: User): Promise<{
+        id: string;
+        ownerId: string;
+        name: string;
+        type: string;
+        addressLine1: string;
+        addressLine2: string | null;
+        city: string;
+        province: string;
+        postalCode: string;
+        country: string;
+        phoneNumber: string;
+        email: string | null;
+        isActive: boolean | null;
+        openTime: string | null;
+        closeTime: string | null;
+        timezone: string | null;
+        mapLocation: string | null;
+        createdBy: string;
+        createdAt: string;
+        updatedAt: string;
+    }>;
+    static getStoreById(id: string, requestingUser: User): Promise<{
+        id: string;
+        ownerId: string;
+        name: string;
+        type: string;
+        addressLine1: string;
+        addressLine2: string | null;
+        city: string;
+        province: string;
+        postalCode: string;
+        country: string;
+        phoneNumber: string;
+        email: string | null;
+        isActive: boolean | null;
+        openTime: string | null;
+        closeTime: string | null;
+        timezone: string | null;
+        mapLocation: string | null;
+        createdBy: string;
+        createdAt: string;
+        updatedAt: string;
+    }>;
+    static listStores(query: ListStoresQuery, requestingUser: User): Promise<{
+        stores: {
+            id: string;
+            ownerId: string;
+            name: string;
+            type: string;
+            addressLine1: string;
+            addressLine2: string | null;
+            city: string;
+            province: string;
+            postalCode: string;
+            country: string;
+            phoneNumber: string;
+            email: string | null;
+            isActive: boolean | null;
+            openTime: string | null;
+            closeTime: string | null;
+            timezone: string | null;
+            mapLocation: string | null;
+            createdBy: string;
+            createdAt: string;
+            updatedAt: string;
+        }[];
+        pagination: {
+            page: number;
+            limit: number;
+            total: number;
+            totalPages: number;
+            hasNext: boolean;
+            hasPrev: boolean;
+        };
+    }>;
+    static updateStore(id: string, data: UpdateStoreRequest, requestingUser: User): Promise<{
+        id: string;
+        ownerId: string;
+        name: string;
+        type: string;
+        addressLine1: string;
+        addressLine2: string | null;
+        city: string;
+        province: string;
+        postalCode: string;
+        country: string;
+        phoneNumber: string;
+        email: string | null;
+        isActive: boolean | null;
+        openTime: string | null;
+        closeTime: string | null;
+        timezone: string | null;
+        mapLocation: string | null;
+        createdBy: string;
+        createdAt: string;
+        updatedAt: string;
+    }>;
+}
+//# sourceMappingURL=store.service.d.ts.map
