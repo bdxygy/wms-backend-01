@@ -1,1 +1,0 @@
-{"version":3,"file":"hono.d.ts","sourceRoot":"","sources":["../../../src/http/hono.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,IAAI,EAAE,MAAM,UAAU,CAAC;AAChC,OAAO,EAAE,IAAI,EAAE,MAAM,MAAM,CAAC;AAE5B,MAAM,WAAW,YAAY;IAC3B,SAAS,EAAE;QACT,IAAI,EAAE,IAAI,CAAC;KACZ,CAAC;CACH;AAED,eAAO,MAAM,SAAS,iEAErB,CAAC"}
